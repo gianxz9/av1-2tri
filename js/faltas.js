@@ -1,7 +1,7 @@
 // Função que pega os valores do formulário
 function pegarFaltas() {
     return {
-      nome: document.getElementById("nome").value,
+      //nome: document.getElementById("nome").value,
       faltas: [
         parseInt(document.getElementById("faltas1").value),
         parseInt(document.getElementById("faltas2").value),
@@ -23,7 +23,8 @@ function pegarFaltas() {
   // Função que exibe o resultado na tela
   function mostrarResultado(nome, media) {
     const resultado = document.getElementById("resultado");
-    resultado.textContent = `A média de faltas de ${nome} é ${media.toFixed(2)}.`;
+    //resultado.textContent = `A média de faltas de ${nome} é ${media.toFixed(2)}.`;
+    resultado.textContent = `A média de faltas é ${media.toFixed(2)}.`;
   }
   
   // Função principal que conecta tudo
